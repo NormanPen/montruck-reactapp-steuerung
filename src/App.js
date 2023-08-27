@@ -1,6 +1,9 @@
 import ControlBtn from "./components/ControlBtn";
 import ControlTouch from "./components/ControlTouch";
 import ControlX from "./components/ControlX";
+import ControllerComponent from "./components/ControllerComponent";
+import LinkerStick from "./components/LinkerStick";
+import SpeedControl from "./components/SpeedControl";
 
 
 function App() {
@@ -9,6 +12,9 @@ function App() {
       <ControlBtn />
       <ControlX />
       <ControlTouch />
+      <ControllerComponent />
+      <SpeedControl />
+ 
     </div>
   );
 }

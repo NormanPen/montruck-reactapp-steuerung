@@ -59,7 +59,7 @@ class ControlX extends React.Component {
   };
 
   handleButtonClick = (endpoint) => {
-    axios.get(`http://localhost:8080${endpoint}`)
+    axios.get(`http://192.168.0.149:8000${endpoint}`)
       .then(() => {
         console.log(`GET request to ${endpoint} successful.`);
       })
@@ -72,7 +72,7 @@ class ControlX extends React.Component {
     return (
       <div>
         {/* Hier fügen Sie Ihre Schaltflächen für die Steuerung hinzu */}
-        <button onClick={() => this.handleButtonClick('/forward')}>Forward</button>
+        <button onClick={() => this.handleButtonClick('/test')}>Forward</button>
         <button onClick={() => this.handleButtonClick('/left')}>Left</button>
         <button onClick={() => this.handleButtonClick('/right')}>Right</button>
         <button onClick={() => this.handleButtonClick('/backward')}>Backward</button>
